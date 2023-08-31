@@ -3,7 +3,7 @@ from app.nuclear.nuclear import Nuclear
 from app.nuclear.repositories.nuclear_repository import NuclearRepository
 
 
-class UserService:
+class WeatherStationService:
     def __init__(self, user_repository: NuclearRepository):
         self.user_repository = user_repository
 
@@ -15,4 +15,3 @@ class UserService:
 
     def get_users(self) -> List[Nuclear]:
         return self.user_repository.get_users()
-
