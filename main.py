@@ -3,8 +3,11 @@ from typing import Union
 from fastapi_amis_admin.admin.settings import Settings
 from fastapi_amis_admin.admin.site import AdminSite
 import uvicorn
+from fastapi_admin.app import app as admin_app
+from fastapi import FastAPI
 
 app = FastAPI()
+app.mount("/admin", admin_app)
 
 
 @app.get("/")
@@ -22,6 +25,4 @@ async def say_hello(name: str):
 # # 挂载后台管理系统
 # site.mount_app(app)
 
-if __name__ == '__main__':
-    uvicorn.run(app)
 
