@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="stations" uuid="2d5f5d9f-91ac-465e-bf48-b620452ea286">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>ce5526b2-fca7-43c4-8fc1-e3dac03c8b06</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:D:\Ysera\Ysera-Service\app\test\stations.sqlite</jdbc-url>
