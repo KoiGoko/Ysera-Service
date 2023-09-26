@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Float
-from ..database.stations_database import Base
+from app.services.meteorological.stations_database import Base
 
 
 class Stations(Base):

@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 import app.services.meteorological.model.stations_model as models
 import app.services.meteorological.service.stations_service as stations_service
-from app.services.meteorological.database.stations_database import SessionLocal, engine
+from app.services.meteorological.stations_database import SessionLocal, engine
 
 from fastapi.middleware.cors import CORSMiddleware
 

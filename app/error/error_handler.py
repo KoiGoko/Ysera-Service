@@ -1,23 +1,33 @@
-from logger_code import ErrorCode
+from error_code import ErrorCode
 
 
-def process_data(data):
-    # process data here
-    if not data:
-        return ErrorCode.INVALID_INPUT, None
-
-    # process data here
-    return ErrorCode.SUCCESS, data
-
-
-result = process_data(None)
-
-if result == ErrorCode.SUCCESS:
-    print("操作成功")
-elif result == ErrorCode.INVALID_INPUT:
-    print("无效的输入")
-elif result == ErrorCode.FILE_NOT_FOUND:
-    print("文件未找到")
-# 可以继续添加更多的条件来处理其他错误码
-else:
-    print("发生未知错误")
+def handle_error(error):
+    """
+    处理错误的函数，根据错误类型返回对应的错误代码和错误描述。
+    """
+    if error.code == 400:
+        return ErrorCode.INVALID_ARGUMENT
+    elif error.code == 401:
+        return ErrorCode.UNAUTHENTICATED
+    elif error.code == 403:
+        return ErrorCode.PERMISSION_DENIED
+    elif error.code == 404:
+        return ErrorCode.NOT_FOUND
+    elif error.code == 409:
+        return ErrorCode.ABORTED
+    elif error.code == 429:
+        return ErrorCode.RESOURCE_EXHAUSTED
+    elif error.code == 499:
+        return ErrorCode.CANCELLED
+    elif error.code == 500:
+        return ErrorCode.INTERNAL
+    elif error.code == 501:
+        return ErrorCode.NOT_IMPLEMENTED
+    elif error.code == 502:
+        return ErrorCode.NETWORK_ERROR
+    elif error.code == 503:
+        return ErrorCode.UNAVAILABLE
+    elif error.code == 504:
+        return ErrorCode.DEADLINE_EXCEEDED
+    else:
+        return ErrorCode.UNKNOWN
