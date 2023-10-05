@@ -1,0 +1,17 @@
+#区域土地利用数据目录
+dir_esa: E:\ESA-new
+
+#地形高程数据目录
+dir_ter: E:\DSM-new
+
+# 原始输入气象数据目录
+dir_ERA5: E:\ERA52020d
+
+# calpuff主要执行程序目录
+dir_exe: C:\calpuff
+
+# 主要原始模型保存路径
+dir_model: E:\system2023s\model
+
+# 计算输出文件夹
+dir_out0: E:\examples

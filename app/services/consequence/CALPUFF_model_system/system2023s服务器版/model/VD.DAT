@@ -1,0 +1,6 @@
+Deposion velocity file (VD.DAT)
+Species Name			Deposition velocities (m/s)
+!KR-85  =  24*0.0E00 !
+!I-131  =  24*1.5E-3 !
+!CS-137  =  24*1.0E-4 !
+!END!
