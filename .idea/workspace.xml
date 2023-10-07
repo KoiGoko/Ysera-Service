@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5af98f1c-5ad0-4711-b00e-b3424091275b" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/app/admin/admin_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dask/distribute_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dask/distribute_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dask/single_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/dask/single_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/register/register_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/register/register_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/register/register_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/register/user_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Ysera-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ysera-Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d5f5d9f-91ac-465e-bf48-b620452ea286.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d5f5d9f-91ac-465e-bf48-b620452ea286.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33f85f1c-8073-4fb9-b2a8-6ea736585b51.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33f85f1c-8073-4fb9-b2a8-6ea736585b51.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d87c52f-6b77-491e-ad54-5cac5684965c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9d87c52f-6b77-491e-ad54-5cac5684965c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dask/dask_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/logger/logger_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/logger/logger_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/admin/admin_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/admin_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/auth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dask/distribute_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dask/distribute_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/consequence/CALPUFF_model_system/system2023s服务器版/prelu2023.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/consequence/CALPUFF_model_system/system2023s服务器版/prelu2023.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,31 +58,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ysera/Ysera-Service/app/services/consequence/CALPUFF_model_system&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Ysera/Ysera-Service/app/services/register",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Ysera\Ysera-Service\app\services\register" />
       <recent name="D:\ysera\Ysera-Service\app\services\consequence\CALPUFF_model_system" />
       <recent name="D:\ysera\Ysera-Service\app\services\evacuate\SUMO" />
       <recent name="$PROJECT_DIR$/app/test" />
       <recent name="$PROJECT_DIR$/app/nuclear" />
-      <recent name="$PROJECT_DIR$/app/evacuate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ysera\Ysera-Service\app\services\evacuate" />
@@ -210,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demo-simple" />
-        <item itemvalue="Python.demo-form" />
-        <item itemvalue="Python.demo-model" />
-        <item itemvalue="Python.fastapi_admin" />
         <item itemvalue="Python.stations_controller (1)" />
+        <item itemvalue="Python.fastapi_admin" />
+        <item itemvalue="Python.demo-simple" />
+        <item itemvalue="Python.demo-model" />
+        <item itemvalue="Python.demo-form" />
       </list>
     </recent_temporary>
   </component>
@@ -253,6 +255,8 @@
       <workItem from="1696426909787" duration="1919000" />
       <workItem from="1696445635975" duration="4244000" />
       <workItem from="1696494757140" duration="2755000" />
+      <workItem from="1696664295769" duration="1500000" />
+      <workItem from="1696666011831" duration="2806000" />
     </task>
     <servers />
   </component>
@@ -275,15 +279,15 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Ysera_Service$stations_controller__1_.coverage" NAME="stations_controller (1) 覆盖结果" MODIFIED="1695392612860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/meteorological/controller" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$demo_model.coverage" NAME="demo-model 覆盖结果" MODIFIED="1695536549259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$import_csv_to_sqlite.coverage" NAME="import_csv_to_sqlite 覆盖结果" MODIFIED="1693875307543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$demo_simple.coverage" NAME="demo-simple 覆盖结果" MODIFIED="1695692673315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
     <SUITE FILE_PATH="coverage/Ysera_Service$demo_form.coverage" NAME="demo-form 覆盖结果" MODIFIED="1695536627421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
     <SUITE FILE_PATH="coverage/Ysera_Service$stations_controller.coverage" NAME="stations_controller 覆盖结果" MODIFIED="1694931784623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/atmospheric/controller" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$demo_simple.coverage" NAME="demo-simple 覆盖结果" MODIFIED="1695692673315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$fastapi_admin.coverage" NAME="fastapi_admin 覆盖结果" MODIFIED="1695536039947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$main.coverage" NAME="main 覆盖结果" MODIFIED="1693651411433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Ysera_Service$json_to_geojson.coverage" NAME="json_to_geojson 覆盖结果" MODIFIED="1693880021774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/utils" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$main.coverage" NAME="main 覆盖结果" MODIFIED="1693651411433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Ysera_Service$data_base.coverage" NAME="data_base 覆盖结果" MODIFIED="1693807214052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/atmospheric/data" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$import_csv_to_sqlite.coverage" NAME="import_csv_to_sqlite 覆盖结果" MODIFIED="1693875307543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$stations_controller__1_.coverage" NAME="stations_controller (1) 覆盖结果" MODIFIED="1695392612860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/meteorological/controller" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$fastapi_admin.coverage" NAME="fastapi_admin 覆盖结果" MODIFIED="1695536039947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$demo_model.coverage" NAME="demo-model 覆盖结果" MODIFIED="1695536549259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
   </component>
 </project>
