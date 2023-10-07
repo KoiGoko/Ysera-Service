@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5af98f1c-5ad0-4711-b00e-b3424091275b" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/app/services/register/register_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/register/register_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/register/register_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/register/user_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ysera-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ysera-Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2d5f5d9f-91ac-465e-bf48-b620452ea286.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2d5f5d9f-91ac-465e-bf48-b620452ea286.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/33f85f1c-8073-4fb9-b2a8-6ea736585b51.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/33f85f1c-8073-4fb9-b2a8-6ea736585b51.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9d87c52f-6b77-491e-ad54-5cac5684965c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9d87c52f-6b77-491e-ad54-5cac5684965c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/admin_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin/admin_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/auth/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/auth/auth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dask/distribute_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/dask/distribute_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/consequence/CALPUFF_model_system/system2023s服务器版/prelu2023.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/consequence/CALPUFF_model_system/system2023s服务器版/prelu2023.py" afterDir="false" />
-    </list>
+    <list default="true" id="5af98f1c-5ad0-4711-b00e-b3424091275b" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -256,7 +241,7 @@
       <workItem from="1696445635975" duration="4244000" />
       <workItem from="1696494757140" duration="2755000" />
       <workItem from="1696664295769" duration="1500000" />
-      <workItem from="1696666011831" duration="2806000" />
+      <workItem from="1696666011831" duration="3015000" />
     </task>
     <servers />
   </component>
