@@ -1,33 +1,16 @@
 from fastapi import Depends, FastAPI
 from sqlalchemy.orm import Session
+import model.stations_model as models
+import service.stations_service as stations_service
+from model.stations_model import getMeteorologicalStationsSession, getMeteorologicalStationsEngine
 
-import app.services.meteorological.model.stations_model as models
-import app.services.meteorological.service.stations_service as stations_service
-from app.services.meteorological.stations_database import SessionLocal, engine
-
-from fastapi.middleware.cors import CORSMiddleware
-
+engine = getMeteorologicalStationsEngine()
 models.Base.metadata.create_all(bind=engine)
-
 app = FastAPI()
 
-origins = [
-    "http://localhost",
-    "http://localhost:3000",
-]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
-# Dependency
 def get_db():
-    db = SessionLocal()
+    db = getMeteorologicalStationsSession()
     try:
         yield db
     finally:

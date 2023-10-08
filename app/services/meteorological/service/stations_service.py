@@ -27,3 +27,9 @@ def get_station_info(db: Session):
     feature_collection = geojson.FeatureCollection(features)
 
     return feature_collection
+
+def getStationsWithDistance() {
+    return axios.get('/api/stations/distance')
+}
+
+def getStation

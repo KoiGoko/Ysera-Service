@@ -18,3 +18,4 @@ def handle_cors(app: FastAPI, origins: list = None):
         allow_methods=["*"],
         allow_headers=["*"],
     )
+

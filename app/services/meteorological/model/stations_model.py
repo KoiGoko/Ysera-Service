@@ -1,9 +1,24 @@
 from sqlalchemy import Column, Integer, String, Float
-from app.services.meteorological.stations_database import Base
+from app.services.common.base_config import BaseConfig, getDataUrl
+
+Config = BaseConfig(getDataUrl("meteorological_stations"))
+Base = Config.getBase()
+
+
+def getMeteorologicalStationsBase():
+    return Config.getBase()
+
+
+def getMeteorologicalStationsSession():
+    return Config.getSession()
+
+
+def getMeteorologicalStationsEngine():
+    return Config.getEngine()
 
 
 class Stations(Base):
-    __tablename__ = "stations"
+    __tablename__ = "meteorological_stations"
 
     id = Column(Integer, primary_key=True, index=True)
     province = Column(String)
