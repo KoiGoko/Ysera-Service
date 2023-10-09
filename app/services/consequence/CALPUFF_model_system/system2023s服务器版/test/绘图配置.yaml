@@ -1,6 +1,0 @@
-# 指定输入气象数据目录
-
-dir_in: I:\test\8dose
-
-# 指定输出文件目录
-dir_out: I:\test

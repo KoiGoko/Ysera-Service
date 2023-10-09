@@ -28,8 +28,12 @@ def get_station_info(db: Session):
 
     return feature_collection
 
+
 def getStationsWithDistance() {
-    return axios.get('/api/stations/distance')
+    print("getStationsWithDistance")
 }
 
-def getStation
+
+def getStationsWithNearest() {
+    print("getStationsWithNearest")
+}

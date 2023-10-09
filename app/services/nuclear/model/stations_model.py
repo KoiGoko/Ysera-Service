@@ -1,9 +1,8 @@
 from sqlalchemy import Column, Integer, String, Float
-from ..database.stations_database import Base
 
 
 class Stations(Base):
-    __tablename__ = "stations"
+    __tablename__ = "nuclear_stations"
 
     id = Column(Integer, primary_key=True, index=True)
     province = Column(String)

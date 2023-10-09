@@ -17,7 +17,19 @@ def get_db():
         db.close()
 
 
-@app.get("/hello")
+@app.get("/me_stations")
+def read_all_stations(db: Session = Depends(get_db)):
+    stations = stations_service.get_station_info(db)
+    return stations
+
+
+@app.get("/me_stations")
+def read_all_stations(db: Session = Depends(get_db)):
+    stations = stations_service.get_station_info(db)
+    return stations
+
+
+@app.get("/me_stations")
 def read_all_stations(db: Session = Depends(get_db)):
     stations = stations_service.get_station_info(db)
     return stations
