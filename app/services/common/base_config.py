@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import yaml
+import os
 
 
 class BaseConfig:
@@ -28,8 +29,16 @@ class BaseConfig:
 
 
 def getDataUrl(base_name):
-    data_url = r"./data_url.yaml"
+    curr_dir = os.path.dirname(os.path.realpath(__file__))
+    data_url = os.path.join(curr_dir, "data_url.yaml")
     with open(data_url, 'r', encoding='utf-8') as file:
         data = yaml.load(file, Loader=yaml.FullLoader)
 
     return data[base_name]
+
+
+if __name__ == '__main__':
+    getDataUrl("meteorological_stations")
+    Config = BaseConfig(getDataUrl("meteorological_stations"))
+    Config.test_connection()
+    print(Config)

@@ -1,5 +1,4 @@
-meteorological_stations: 'sqlite:///./../../sqlite_data/data_base/
-           meteorological/meteorological_stations.sqlite'
+meteorological_stations: 'sqlite:///./../../sqlite_data/data_base/meteorological/meteorological_stations.sqlite'
 
 nuclear_stations: 'sqlite:///./../../sqlite_data/data_base/
            nuclear/nuclear_stations.sqlite'

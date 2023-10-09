@@ -1,12 +1,10 @@
 from fastapi import Depends, FastAPI
+from fastapi import APIRouter
 from sqlalchemy.orm import Session
-import model.stations_model as models
-import service.stations_service as stations_service
-from model.stations_model import getMeteorologicalStationsSession, getMeteorologicalStationsEngine
+import services.stations_service as stations_service
+from models.stations_model import getMeteorologicalStationsSession
 
-engine = getMeteorologicalStationsEngine()
-models.Base.metadata.create_all(bind=engine)
-app = FastAPI()
+router = APIRouter()
 
 
 def get_db():
@@ -17,23 +15,26 @@ def get_db():
         db.close()
 
 
-@app.get("/me_stations")
+@router.get("/me_stations_info")
 def read_all_stations(db: Session = Depends(get_db)):
     stations = stations_service.get_station_info(db)
     return stations
 
 
-@app.get("/me_stations")
+@router.get("/me_stations_with_distance")
 def read_all_stations(db: Session = Depends(get_db)):
     stations = stations_service.get_station_info(db)
     return stations
 
 
-@app.get("/me_stations")
+@router.get("/me_stations_with_nearest")
 def read_all_stations(db: Session = Depends(get_db)):
     stations = stations_service.get_station_info(db)
     return stations
 
+
+app = FastAPI()
+app.include_router(router)
 
 if __name__ == "__main__":
     import uvicorn
