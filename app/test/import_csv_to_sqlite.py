@@ -10,15 +10,15 @@ def save_to_db(csv_file, db_file):
     df = df.dropna(axis=0, how='all')
 
     conn = sqlite3.connect(db_file)
-    df.to_sql('stations', conn, if_exists='replace', index=False)
+    df.to_sql('nuclear_stations', conn, if_exists='replace', index=False)
     # 关闭数据库连接
     conn.close()
 
 
 if __name__ == "__main__":
     # 输入CSV文件和SQLite数据库文件的路径
-    csv_file_path = '国家级地面气象观测站站点基本信息全表（2016）英文.csv'
-    sqlite_db_file_path = 'stations.sqlite'
+    csv_file_path = '核电厂地理位置 - 英文版.CSV'
+    sqlite_db_file_path = 'nuclear_stations.sqlite'
 
     # 读取CSV文件
     save_to_db(csv_file_path, sqlite_db_file_path)

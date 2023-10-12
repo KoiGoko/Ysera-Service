@@ -1,17 +1,16 @@
 from sqlalchemy.orm import Session
 import geojson
-from ..models.stations_model import Stations
+from app.services.nuclear.models.nuclear_stations_model import NuclearStation
 from app.services.utils.query_results_to_json import query_results_to_json
 
 
-def get_nuclear_station_info(db: Session):
-    res = db.query(Stations).all()
+def get_nuclear_stations_info(db: Session):
+    res = db.query(NuclearStation).all()
 
     # 将结果列表转换为 JSON 字符串
     json_data = query_results_to_json(res)
 
     features = []
-
     for item in json_data:
         properties = {}  # 创建一个空字典用于存储属性键值对
         for key, value in item.items():
@@ -30,44 +29,34 @@ def get_nuclear_station_info(db: Session):
     return feature_collection
 
 
-from sqlalchemy.orm import Session
-from app.model.stations_model import Stations
-from app.services.utils.query_results_to_json import query_results_to_json
-
-
-# 查询核电厂信息
-def get_nuclear_station_info(db: Session):
-    stations = db.query(Stations).all()
-    return query_results_to_json(stations)
-
-
-# 添加核电厂信息
-def add_nuclear_station(db: Session, name: str, latitude: float, longitude: float):
-    new_station = Stations(name=name, latitude=latitude, longitude=longitude)
-    db.add(new_station)
-    db.commit()
-    db.refresh(new_station)
-    return new_station
-
-
-# 更新核电厂信息
-def update_nuclear_station(db: Session, station_id: int, name: str, latitude: float, longitude: float):
-    station = db.query(Stations).filter(Stations.id == station_id).first()
-
-    if station:
-        station.name = name
-        station.latitude = latitude
-        station.longitude = longitude
-        db.commit()
-        db.refresh(station)
-        return station
-    else:
-        return None
-
-
+#
+# # 添加核电厂信息
+# def add_nuclear_station(db: Session, name: str, latitude: float, longitude: float):
+#     new_station = Stations(name=name, latitude=latitude, longitude=longitude)
+#     db.add(new_station)
+#     db.commit()
+#     db.refresh(new_station)
+#     return new_station
+#
+#
+# # 更新核电厂信息
+# def update_nuclear_station(db: Session, station_id: int, name: str, latitude: float, longitude: float):
+#     station = db.query(Stations).filter(Stations.id == station_id).first()
+#
+#     if station:
+#         station.name = name
+#         station.latitude = latitude
+#         station.longitude = longitude
+#         db.commit()
+#         db.refresh(station)
+#         return station
+#     else:
+#         return None
+#
+#
 # 删除核电厂信息
 def delete_nuclear_station(db: Session, station_id: int):
-    station = db.query(Stations).filter(Stations.id == station_id).first()
+    station = db.query(NuclearStation).filter(NuclearStation.id == station_id).first()
 
     if station:
         db.delete(station)
@@ -75,4 +64,3 @@ def delete_nuclear_station(db: Session, station_id: int):
         return True
     else:
         return False
-
