@@ -24,13 +24,8 @@ def handle_cors(app: FastAPI, origins: List[str] = None):
 
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=origins,
+        allow_origins=["http://localhost", "http://localhost:8001", "http://localhost:3000"],
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],
     )
-
-
-# 示例用法
-app = FastAPI()
-handle_cors(app, origins=["http://localhost", "http://localhost:3000"])
