@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5af98f1c-5ad0-4711-b00e-b3424091275b" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Ysera-Service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ysera-Service.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/meteorological/meteorological_routers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/meteorological/meteorological_routers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/systemEC&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/systemEC20231023/systemEC&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -92,6 +91,28 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.meteorological_routers (1)">
+    <configuration name="demo-form" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Ysera-Service" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/test/demo-form.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="meteorological_routers (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Ysera-Service" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,28 +127,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/services/meteorological/meteorological_routers.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="meteorological_routers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Ysera-Service" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app/services/meteorological" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\Ysera\Ysera-Service\app\services\meteorological\meteorological_routers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -228,9 +227,9 @@
       <list>
         <item itemvalue="Python.meteorological_routers (1)" />
         <item itemvalue="Python.nuclear_routers (1)" />
+        <item itemvalue="Python.demo-form" />
         <item itemvalue="Python.run" />
         <item itemvalue="Python.nuclear_routers" />
-        <item itemvalue="Python.meteorological_routers" />
       </list>
     </recent_temporary>
   </component>
@@ -295,6 +294,12 @@
       <workItem from="1697700612671" duration="594000" />
       <workItem from="1697703756744" duration="2949000" />
       <workItem from="1697766427860" duration="1803000" />
+      <workItem from="1698020896627" duration="588000" />
+      <workItem from="1698021500961" duration="6752000" />
+      <workItem from="1698109712478" duration="31000" />
+      <workItem from="1698109868123" duration="9000" />
+      <workItem from="1698111973688" duration="1249000" />
+      <workItem from="1698133729741" duration="598000" />
     </task>
     <servers />
   </component>
@@ -325,7 +330,7 @@
     <SUITE FILE_PATH="coverage/Ysera_Service$base_config.coverage" NAME="base_config 覆盖结果" MODIFIED="1696830286773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/common" />
     <SUITE FILE_PATH="coverage/Ysera_Service$json_to_geojson.coverage" NAME="json_to_geojson 覆盖结果" MODIFIED="1693880021774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/utils" />
     <SUITE FILE_PATH="coverage/Ysera_Service$stations_routers.coverage" NAME="stations_routers 覆盖结果" MODIFIED="1697073403789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/meteorological" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$nuclear_routers__1_.coverage" NAME="nuclear_routers (1) 覆盖结果" MODIFIED="1697676971599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/nuclear" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$nuclear_routers__1_.coverage" NAME="nuclear_routers (1) 覆盖结果" MODIFIED="1698111981655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/nuclear" />
     <SUITE FILE_PATH="coverage/Ysera_Service$main.coverage" NAME="main 覆盖结果" MODIFIED="1693651411433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Ysera_Service$data_base.coverage" NAME="data_base 覆盖结果" MODIFIED="1693807214052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/atmospheric/data" />
     <SUITE FILE_PATH="coverage/Ysera_Service$meteorological_stations_routers__1_.coverage" NAME="meteorological_stations_routers (1) 覆盖结果" MODIFIED="1697092920187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/meteorological" />
@@ -333,10 +338,10 @@
     <SUITE FILE_PATH="coverage/Ysera_Service$nuclear_router.coverage" NAME="nuclear_router 覆盖结果" MODIFIED="1697091657066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/nuclear" />
     <SUITE FILE_PATH="coverage/Ysera_Service$stations_controller__1_.coverage" NAME="stations_controller (1) 覆盖结果" MODIFIED="1695392612860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/meteorological/controller" />
     <SUITE FILE_PATH="coverage/Ysera_Service$fastapi_admin.coverage" NAME="fastapi_admin 覆盖结果" MODIFIED="1695536039947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$meteorological_routers__1_.coverage" NAME="meteorological_routers (1) 覆盖结果" MODIFIED="1697768846525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/meteorological" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$meteorological_routers__1_.coverage" NAME="meteorological_routers (1) 覆盖结果" MODIFIED="1698112003415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/services/meteorological" />
     <SUITE FILE_PATH="coverage/Ysera_Service$demo_simple.coverage" NAME="demo-simple 覆盖结果" MODIFIED="1695692673315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
-    <SUITE FILE_PATH="coverage/Ysera_Service$demo_form.coverage" NAME="demo-form 覆盖结果" MODIFIED="1695536627421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
     <SUITE FILE_PATH="coverage/Ysera_Service$stations_controller.coverage" NAME="stations_controller 覆盖结果" MODIFIED="1694931784623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/atmospheric/controller" />
+    <SUITE FILE_PATH="coverage/Ysera_Service$demo_form.coverage" NAME="demo-form 覆盖结果" MODIFIED="1698024810390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
     <SUITE FILE_PATH="coverage/Ysera_Service$run.coverage" NAME="run 覆盖结果" MODIFIED="1697340145428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/Ysera_Service$demo_model.coverage" NAME="demo-model 覆盖结果" MODIFIED="1695536549259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/test" />
   </component>

@@ -22,6 +22,7 @@ async def read_all_stations(db: Session = Depends(get_db)):
     stations = meteorological_stations_service.get_meteorological_stations_info(db)
     return stations
 
+
 # @meteorological_router.get("/me_stations_with_distance")
 # def read_all_stations(db: Session = Depends(get_db)):
 #     stations = stations_service.get_meteorological_station_info(db)
@@ -38,5 +39,3 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, port=8001)
-
-
