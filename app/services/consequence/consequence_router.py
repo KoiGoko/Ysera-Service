@@ -1,18 +1,25 @@
-from fastapi import Depends, FastAPI
-from sqlalchemy.orm import Session
+import io
 
-from app.config.app_prefix import evacuate_prefix
+from fastapi import FastAPI
+from starlette.responses import StreamingResponse
+
+from app.cors.handle_cors import handle_cors
+from nc_to_vector import create_upload_file
 
 app = FastAPI()
 
 
-@app.get("/hello")
+@app.get("/consequence/evacuate", )
 def read_all_stations():
+    nc_file = 'dose01.nc'
+    dose_data_bytes = create_upload_file()
 
-    return 'hello world'
+    return StreamingResponse(io.BytesIO(dose_data_bytes))
 
+
+handle_cors(app, origins=["http://localhost", "http://localhost:8003"])
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app)
+    uvicorn.run(app, port=8003)
