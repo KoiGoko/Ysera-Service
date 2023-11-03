@@ -1,5 +1,9 @@
-meteorological_stations: 'sqlite:///./../../sqlite_data/data_base/meteorological/meteorological_stations.sqlite'
+#用户数据库
+users: 'sqlite:///../data/user.sqlite'
 
-nuclear_stations: 'sqlite:///./../../sqlite_data/data_base/nuclear/nuclear_stations.sqlite'
+#气象站数据库
+meteorological_stations: 'sqlite:///../data/meteorological_stations.sqlite'
 
-users: 'sqlite:///./../../sqlite_data/data_base/user/user.sqlite'
+#核电数据库
+nuclear_stations: 'sqlite:///../data/nuclear_stations.sqlite'
+
