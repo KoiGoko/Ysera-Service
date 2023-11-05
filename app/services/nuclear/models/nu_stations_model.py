@@ -1,9 +1,8 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime
-from sqlalchemy.sql import func
-from app.services.nuclear.models.nu_stations_instance import nuclear_stations_Base
+from app.services.nuclear.models.nu_stations_instance import nu_stations_base
 
 
-class NuclearStation(nuclear_stations_Base):
+class NuclearStation(nu_stations_base):
     __tablename__ = "nuclear_stations"
 
     id = Column(Integer, primary_key=True, index=True)
@@ -18,3 +17,4 @@ class NuclearStation(nuclear_stations_Base):
     longitude = Column(Float)
     latitude = Column(Float)
     elevation = Column(Float)
+

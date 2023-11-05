@@ -16,6 +16,4 @@ class MeteorologicalStation(me_base):
     barometric_sensor_altitude_meters = Column(Float)
     station_note = Column(String)
 
-    def __repr__(self, __tablename__):
-        return __tablename__
 

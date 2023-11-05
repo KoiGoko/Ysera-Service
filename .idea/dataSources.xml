@@ -27,7 +27,7 @@
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="nuclear_stations" uuid="db7e4006-b6d2-426a-96a0-438b80a4b072">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>ce5526b2-fca7-43c4-8fc1-e3dac03c8b06</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:D:\Ysera\Ysera-Service\app\sqlite_data\data_base\nuclear\nuclear_stations.sqlite</jdbc-url>

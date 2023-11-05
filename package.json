@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@mapbox-controls/language": "^1.0.1"
+  }
+}

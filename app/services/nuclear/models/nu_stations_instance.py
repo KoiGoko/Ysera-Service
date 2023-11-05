@@ -1,16 +1,16 @@
 from app.services.common.base_config import BaseConfig, get_data_url
 
-Config = BaseConfig(get_data_url("nuclear_stations"))
-nuclear_stations_Base = Config.get_base()
+config = BaseConfig(get_data_url("nuclear_stations"))
+nu_stations_base = config.get_base()
 
 
-def getNuclearStationsBase():
-    return Config.get_base()
+def get_nu_stations_base():
+    return config.get_base()
 
 
-def getNuclearStationsSession():
-    return Config.get_session()
+def get_nu_stations_session():
+    return config.get_session()
 
 
-def getNuclearStationsEngine():
-    return Config.get_engine()
+def get_nu_stations_engine():
+    return config.get_engine()

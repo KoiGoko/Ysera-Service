@@ -1,8 +1,8 @@
-import uvicorn
-from fastapi import APIRouter, FastAPI
-
+from fastapi import APIRouter
+from fastapi import Depends
+from sqlalchemy.orm import Session
 from app.services.meteorological.services.me_service import get_me_stations
-from app.cors.handle_cors import handle_cors
+from app.services.meteorological.models.me_data_base import get_me_session
 
 router = APIRouter(
     prefix="/me",
@@ -11,14 +11,15 @@ router = APIRouter(
 )
 
 
+def get_db():
+    db = get_me_session()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
 @router.get("/stations", tags=["meStations"])
-async def read_all_stations():
-    stations = get_me_stations()
+async def read_all_stations(db: Session = Depends(get_db)):
+    stations = get_me_stations(db)
     return stations
-
-
-if __name__ == '__main__':
-    app = FastAPI()
-    app.include_router(router)
-    handle_cors(app, origins=["http://localhost", "http://localhost:8003"])
-    uvicorn.run(app, port=8003)
