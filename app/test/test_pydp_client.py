@@ -1,16 +1,14 @@
-import matplotlib.pyplot as plt
+import time
+
 import netCDF4
 import numpy as np
-import time
 from PIL import Image
 
-dose_nc = netCDF4.Dataset('dose02.nc')
+dose_nc = netCDF4.Dataset('dose01.nc')
 
 lon = dose_nc.variables['lon'][:]
 lat = dose_nc.variables['lat'][:]
 dose_inhaled = dose_nc.variables['air'][:]
-# dose_eff = dose_nc.variables['dose_eff'][:]
-# dose_th = dose_nc.variables['dose_th'][:]
 
 dose_eff_min = np.min(dose_inhaled)
 dose_eff_max = np.max(dose_inhaled)
@@ -23,32 +21,22 @@ lon_mesh, lat_mesh = np.meshgrid(lon, lat)
 gray_img = (norm_dose_eff * 255).astype(np.uint8)
 time1 = time.time()
 
+# Assuming 'dose01_0.png' to 'dose01_52.png' exist in your directory
+for i in range(36):
+    gray_img1 = (norm_dose_eff[i, :, :] * 65535).astype(np.uint16)  # Scale to 16-bit range
+    im = Image.fromarray(gray_img1, mode='I;16')  # Use 'I;16' mode for 16-bit grayscale
+    im.save(f'dose01_{i}_int16.png')
 
-for i in range(0, 53):
-    gray_img1 = gray_img[i, :, :]
-    im = Image.fromarray(gray_img1, mode='L')
-    im.save('dose01_' + str(i) + '.png')
-# for i in range(0, 24):
-#     gray_img1 = gray_img[i, :, :]
-#     plt.imsave('dose01_' + str(i) + '.png', gray_img1, cmap='gray')
+image_list = []
+
+for i in range(36):
+    image_path = f'dose01_{i}_int16.png'
+    img = Image.open(image_path)
+    image_list.append(img)
+
+# Save as a single TIFF file with int16 precision
+image_list[0].save('stacked_dose01_int16.tif', save_all=True, append_images=image_list[1:], compression='tiff_deflate')
+
 time2 = time.time()
-
-
-with Image.open('output_multi_frame.tif', 'w') as multi_frame_tiff:
-    for gray_img in gray_images:
-        # 将 NumPy 数组转换为 Pillow 图像对象
-        image = Image.fromarray(gray_img, mode='L')
-        # 将图像添加到多帧 TIFF 文件中
-        multi_frame_tiff.save(image)
-
 print(time2 - time1)
-
-
-
-# gray_img1 = gray_img[5, :, :]
-#
-# plt.imshow(gray_img1, cmap='gray')
-# plt.colorbar()
-# # plt.show()
-# plt.savefig('dose01.png')
-print(dose_nc)
+print('done')
